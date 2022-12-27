@@ -15,7 +15,8 @@ spec:
   template:   # here we define our PODS Specs (k8s uses go template in the background)
     metadata: 
      name: moshe-pod
-     labels: "frontend"
+     labels:
+      tier: "frontend"
     spec:
      containers: 
      - name: app1 
