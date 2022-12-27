@@ -3,19 +3,19 @@ kind: ReplicaSet
 metadata:
   name: frontend
   labels:
-    app: spring
-    tier: fe
+    app: "spring"
+    tier: "fe"
 spec:
   # here we select the number of pods we wish to start and the selector that tells our replica set which pods it needs 
   #  to manage
   replicas: 2
   selector:  # Using the selector we tell our replicaset which pods to manage
     matchLabels:
-      tier: frontend
+      tier: "frontend"
   template:   # here we define our PODS Specs (k8s uses go template in the background)
     metadata: 
      name: moshe-pod
-     labels: frontend
+     labels: "frontend"
     spec:
      containers: 
      - name: app1 
