@@ -19,4 +19,4 @@ spec:
     spec:
       containers:
       - name: spring-music
-        image: yanivomc/nginx:latest
+        image: nginx:latest
